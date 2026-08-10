@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery Dasar</title>
+    <script type="text/javascript" src="jquery-4.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <h1>PPLG JQuery Dasar</h1>
+    <button id="tombol">TOMBOL</button>
+    <div class="box"></div>
+</body>
+<script type="text/javascript">
+    $('#tombol').mouseenter(function(){
+        $('.box').show();
+    });
+
+    $('#tombol').mouseleave(function(){
+        $('.box').hide();
+    });
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery Dasar</title>
+    <script type="text/javascript" src="jquery-4.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <h1>PPLG JQuery Dasar</h1>
+    <button id="tombol">TOMBOL</button>
+    <div class="box"></div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#tombol").click(function(){
+    $('.box').toggle();
+});
+});
+</script>
+</html>

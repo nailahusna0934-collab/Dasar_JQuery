@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menghapus Element dengan JQuery</title>
+        <script type="text/javascript" src="jquery-4.0.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="style16.css">
+    </head>
+<body>
+    <h1>remove Function JQuery</h1>
+    <button class="tombol">Tombol</button>
+    <div class="kotak">
+        <span>INI ADALAH KOTAK</span>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.tombol').click(function(){
+            $('.kotak').remove();
+        });
+    });
+</script>
+</html>

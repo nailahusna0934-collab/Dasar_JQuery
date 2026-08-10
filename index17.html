@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menambah dan Menghapus Class dengan JQuery</title>
+        <script type="text/javascript" src="jquery-4.0.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="style17.css">
+    </head>
+<body>
+    <h1>add and remove class Function JQuery</h1>
+    <button class="tombol" id="tambah">Tambahkan class</button>
+    <button class="tombol" id="hapus">Hapus class</button>
+    <div class="lingkaran"></div>
+    <p class="pesan"></p>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tambah').click(function(){
+            $('.lingkaran').addClass('biru');
+            $('.pesan').text('class biru di tambahkan');
+        });
+        $('#hapus').click(function(){
+            $('.lingkaran').removeClass('biru');
+            $('.pesan').text('class biru di hapus');
+        });
+    });
+</script>
+</html>
